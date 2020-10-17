@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  tests:
+    name: Unit-Tests
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: run unit tests
+        run: |
+          swift test --enable-code-coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./.build/debug/codecov/WebsocketKit.json
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
