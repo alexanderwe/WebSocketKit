@@ -55,7 +55,7 @@ final class WebsocketKitTests: XCTestCase {
     final let testUrl = URL(string: "wss://echo.websocket.org")!
     
     func testSendStringMessage() {
-        let websocket = Websocket(url: testUrl, additionalHeaders: ["Authorization:": "Bearer <someToken>"])
+        let websocket = Websocket(url: testUrl)
         
         let expectation = XCTestExpectation(description: "Receive a message from the remote server")
         

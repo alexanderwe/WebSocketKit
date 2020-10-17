@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Websocket.swift
 //  
 //
 //  Created by Alexander Weiß on 17.10.20.
@@ -42,7 +42,7 @@ public class Websocket {
     /// - Parameters:
     ///   - url: Websocket url to connect to
     ///   - autoReplyToPing: Flag to indicate whether the instance should auto reply to ping messages
-    ///   - connectionQueue: Queue on with the messages should be handled
+    ///   - connectionQueue: Queue on which the messages should be handled
     ///   - additionalHeaders: Additional HTTP header to include when connect to the server
     public init(url: URL,
          autoReplyToPing: Bool = false,
