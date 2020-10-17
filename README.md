@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-LoggingKit is a small wrapper around the `Network` framework to work with websocket connections
+    WebsocketKit is a small wrapper around the `Network` framework to work with websocket connections
 </p>
 
 ## Installation
