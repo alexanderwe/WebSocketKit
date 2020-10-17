@@ -1,7 +1,7 @@
 # WebsocketKit
 
 <p align="center">
-   <a href="https://developer.apple.com/swift/">
+    <a href="https://developer.apple.com/swift/">
       <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
    </a>
    <a href="https://github.com/apple/swift-package-manager">
@@ -10,7 +10,10 @@
 
    <a href="https://github.com/alexanderwe/LoggingKit">
       <img src="https://github.com/alexanderwe/WebsocketKit/workflows/CI/badge.svg" alt="CI">
-   </a>   
+   </a>
+   <a href="https://codecov.io/gh/alexanderwe/WebsocketKit">
+        <img src="https://codecov.io/gh/alexanderwe/WebsocketKit/branch/main/graph/badge.svg?token=zNmgmMp5zB" alt="Code coverage">
+   </a>
 </p>
 
 <p align="center">

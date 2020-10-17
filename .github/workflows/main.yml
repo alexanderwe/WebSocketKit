@@ -15,7 +15,7 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./.build/debug/codecov/SurferKit.json
+          file: ./.build/debug/codecov/WebsocketKit.json
           flags: unittests
           name: codecov-umbrella
           fail_ci_if_error: true
