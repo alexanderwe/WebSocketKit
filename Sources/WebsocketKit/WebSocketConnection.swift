@@ -1,13 +1,9 @@
 //
-//  File.swift
+//  WebSocketConnection.swift
 //  
 //
 //  Created by Alexander Weiß on 17.10.20.
 //
-
-import Foundation
-import Network
-
 
 /// Defines a websocket connection.
 public protocol WebSocketConnection {

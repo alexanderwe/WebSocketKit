@@ -1,12 +1,9 @@
 //
-//  File.swift
+//  Websocket.swift
 //  
 //
 //  Created by Alexander Weiß on 17.10.20.
 //
-
-import Foundation
-import Network
 
 /// Defines a delegate for a websocket connection.
 public protocol WebSocketConnectionDelegate: AnyObject {
@@ -21,7 +18,7 @@ public protocol WebSocketConnectionDelegate: AnyObject {
 }
 
 /// Websocket representaton
-public class Websocket {
+public class WebSocket {
 
     // MARK: - Public properties
     weak public var delegate: WebSocketConnectionDelegate?
@@ -42,7 +39,7 @@ public class Websocket {
     /// - Parameters:
     ///   - url: Websocket url to connect to
     ///   - autoReplyToPing: Flag to indicate whether the instance should auto reply to ping messages
-    ///   - connectionQueue: Queue on with the messages should be handled
+    ///   - connectionQueue: Queue on which the messages should be handled
     ///   - additionalHeaders: Additional HTTP header to include when connect to the server
     public init(url: URL,
          autoReplyToPing: Bool = false,
@@ -195,7 +192,7 @@ public class Websocket {
 }
 
 // MARK: - WebSocketConnection
-extension Websocket: WebSocketConnection {
+extension WebSocket: WebSocketConnection {
     
     public func connect() {
         connection.stateUpdateHandler = connectionStateDidChange(to:)
