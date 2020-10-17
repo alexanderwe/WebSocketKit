@@ -1,4 +1,4 @@
-# WebsocketKit
+# WebSocketKit
 
 <p align="center">
     <a href="https://developer.apple.com/swift/">
@@ -9,15 +9,15 @@
    </a>
 
    <a href="https://github.com/alexanderwe/LoggingKit">
-      <img src="https://github.com/alexanderwe/WebsocketKit/workflows/CI/badge.svg" alt="CI">
+      <img src="https://github.com/alexanderwe/WebSocketKit/workflows/CI/badge.svg" alt="CI">
    </a>
-   <a href="https://codecov.io/gh/alexanderwe/WebsocketKit">
-        <img src="https://codecov.io/gh/alexanderwe/WebsocketKit/branch/main/graph/badge.svg?token=zNmgmMp5zB" alt="Code coverage">
+   <a href="https://codecov.io/gh/alexanderwe/WebSocketKit">
+        <img src="https://codecov.io/gh/alexanderwe/WebSocketKit/branch/main/graph/badge.svg?token=zNmgmMp5zB" alt="Code coverage">
    </a>
 </p>
 
 <p align="center">
-    WebsocketKit is a small wrapper around the `Network` framework to work with websocket connections
+    WebSocketKit is a small wrapper around the `Network` framework to work with websocket connections
 </p>
 
 ## Installation
@@ -28,11 +28,11 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/alexanderwe/WebsocketKit.git", from: "1.0.0")
+    .package(url: "https://github.com/alexanderwe/WebSocketKit.git", from: "1.0.0")
 ]
 ```
 
-Alternatively navigate to your Xcode project, select `Swift Packages` and click the `+` icon to search for `LoggingKit`.
+Alternatively navigate to your Xcode project, select `Swift Packages` and click the `+` icon to search for `Web`.
 
 ### Manually
 
@@ -40,53 +40,56 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 
 ## Usage
 
-At first import `WebsocketKit`
+At first import `WebSocketKit`
 
 ```swift
-import WebsocketKit
+import WebSocketKit
 ```
 
-Define a `Websocket` instance
+Define a `WebsSocket` instance
 
 ```swift
-let websocket = Websocket(url: URL(string: "wss://echo.websocket.org")!)
+let websocket = WebsSocket(url: URL(string: "wss://echo.websocket.org")!)
 ```
 
-It also makes sense to create a instance of a class that conforms to the `WebsocketConnectionDelegate` in order to receive websocket events
+It also makes sense to create a instance of a class that conforms to the `WebSocketConnectionDelegate` in order to receive websocket events. Be aware that you also need to import the `Network` framework in order to have access to `NWProtocolWebSocket`.
 
 ```swift
-class WebsocketDelegate: WebSocketConnectionDelegate {
+import Network
+
+
+class WebSocketDelegate: WebSocketConnectionDelegate {
 
     func webSocketDidConnect(connection: WebSocketConnection) {
-        print("Websocket did connect")
+        print("WebSocket did connect")
     }
 
     func websocketDidPrepare(connection: WebSocketConnection) {
-        print("Websocket did prepare")
+        print("WebSocket did prepare")
     }
 
     func webSocketDidDisconnect(connection: WebSocketConnection, closeCode: NWProtocolWebSocket.CloseCode, reason: Data?) {
-        print("Websocket did disconnect")
+        print("WebSocket did disconnect")
     }
 
     func websocketDidCancel(connection: WebSocketConnection) {
-        print("Websocket did cancel")
+        print("WebSocket did cancel")
     }
 
     func webSocketDidReceiveError(connection: WebSocketConnection, error: Error) {
-        print("Websocket did receive error")
+        print("WebSocket did receive error: \(error)")
     }
 
     func webSocketDidReceivePong(connection: WebSocketConnection) {
-        print("Websocket did receive pong")
+        print("WebSocket did receive pong")
     }
 
     func webSocketDidReceiveMessage(connection: WebSocketConnection, string: String) {
-        print("Websocket did receive string message")
+        print("WebSocket did receive string message: \(string)")
     }
 
     func webSocketDidReceiveMessage(connection: WebSocketConnection, data: Data) {
-        print("Websocket did receive data message")
+        print("WebSocket did receive data message")
     }
 }
 ```
@@ -94,7 +97,7 @@ class WebsocketDelegate: WebSocketConnectionDelegate {
 Set an instance of the delegate instance to the `Websocket` instance and start listenting for events
 
 ```swift
-let delegate = WebsocketDelegate()
+let delegate = WebSocketDelegate()
 websocket.delegate = delegate
 
 websocket.connect() // Connects to the url specified in the initializer and listens for messages

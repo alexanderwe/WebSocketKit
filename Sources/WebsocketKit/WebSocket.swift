@@ -5,9 +5,6 @@
 //  Created by Alexander Weiß on 17.10.20.
 //
 
-import Foundation
-import Network
-
 /// Defines a delegate for a websocket connection.
 public protocol WebSocketConnectionDelegate: AnyObject {
     func webSocketDidConnect(connection: WebSocketConnection)
@@ -21,7 +18,7 @@ public protocol WebSocketConnectionDelegate: AnyObject {
 }
 
 /// Websocket representaton
-public class Websocket {
+public class WebSocket {
 
     // MARK: - Public properties
     weak public var delegate: WebSocketConnectionDelegate?
@@ -195,7 +192,7 @@ public class Websocket {
 }
 
 // MARK: - WebSocketConnection
-extension Websocket: WebSocketConnection {
+extension WebSocket: WebSocketConnection {
     
     public func connect() {
         connection.stateUpdateHandler = connectionStateDidChange(to:)
