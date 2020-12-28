@@ -36,7 +36,7 @@ Alternatively navigate to your Xcode project, select `Swift Packages` and click 
 
 ### Manually
 
-If you prefer not to use any of the aforementioned dependency managers, you can integrate LoggingKit into your project manually. Simply drag the `Sources` Folder into your Xcode project.
+If you prefer not to use any of the aforementioned dependency managers, you can integrate `WebSocketKit` into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
 ## Usage
 

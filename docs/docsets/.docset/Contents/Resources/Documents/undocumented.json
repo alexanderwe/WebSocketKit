@@ -58,21 +58,21 @@
     },
     {
       "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 28,
+      "line": 27,
       "symbol": "Websocket.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 68,
+      "line": 67,
       "symbol": "Websocket.init(request:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 224,
+      "line": 223,
       "symbol": "Websocket.ping(interval:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

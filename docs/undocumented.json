@@ -1,89 +1,89 @@
 {
   "warnings": [
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 13,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 10,
       "symbol": "WebSocketConnectionDelegate.webSocketDidConnect(connection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 14,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 11,
       "symbol": "WebSocketConnectionDelegate.websocketDidPrepare(connection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 15,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 12,
       "symbol": "WebSocketConnectionDelegate.webSocketDidDisconnect(connection:closeCode:reason:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 16,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 13,
       "symbol": "WebSocketConnectionDelegate.websocketDidCancel(connection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 17,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 14,
       "symbol": "WebSocketConnectionDelegate.webSocketDidReceiveError(connection:error:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 18,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 15,
       "symbol": "WebSocketConnectionDelegate.webSocketDidReceivePong(connection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 19,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 16,
       "symbol": "WebSocketConnectionDelegate.webSocketDidReceiveMessage(connection:string:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 20,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 17,
       "symbol": "WebSocketConnectionDelegate.webSocketDidReceiveMessage(connection:data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 27,
-      "symbol": "Websocket.delegate",
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 24,
+      "symbol": "WebSocket.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 67,
-      "symbol": "Websocket.init(request:)",
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 64,
+      "symbol": "WebSocket.init(request:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/Websocket.swift",
-      "line": 223,
-      "symbol": "Websocket.ping(interval:)",
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocket.swift",
+      "line": 220,
+      "symbol": "WebSocket.ping(interval:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit/Sources/WebsocketKit/WebsocketConnection.swift",
-      "line": 36,
+      "file": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit/Sources/WebsocketKit/WebSocketConnection.swift",
+      "line": 32,
       "symbol": "WebSocketConnection.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebsocketKit"
+  "source_directory": "/Users/alexanderweiss/Documents/Programming/swift-projects/WebSocketKit"
 }
