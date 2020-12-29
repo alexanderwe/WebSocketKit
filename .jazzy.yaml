@@ -1,7 +1,0 @@
-abstract: Docs/Sections/*.md
-author: Alexander Weiß
-author_url: https://alexanderweiss.dev
-github_url: https://github.com/alexanderwe/WebSocketKit
-swift_build_tool: spm
-build_tool_arguments: [-Xswiftc, -swift-version, -Xswiftc, "5"]
-output: ./docs
