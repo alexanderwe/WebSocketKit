@@ -13,15 +13,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run unit tests
         run: |
-          swift test --enable-code-coverage
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./.build/debug/codecov/WebsocketKit.json
-          flags: unittests
-          name: codecov-umbrella
-          fail_ci_if_error: true    
+          swift test --enable-code-coverage 
   update_documentation:
     name: Update documentation
     runs-on: ubuntu-latest

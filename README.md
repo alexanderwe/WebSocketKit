@@ -11,9 +11,9 @@
    <a href="https://github.com/alexanderwe/LoggingKit">
       <img src="https://github.com/alexanderwe/WebSocketKit/workflows/Main%20Branch%20CI/badge.svg" alt="CI">
    </a>
-   <a href="https://codecov.io/gh/alexanderwe/WebSocketKit">
+   <!-- <a href="https://codecov.io/gh/alexanderwe/WebSocketKit">
         <img src="https://codecov.io/gh/alexanderwe/WebSocketKit/branch/main/graph/badge.svg?token=zNmgmMp5zB" alt="Code coverage">
-   </a>
+   </a> -->
 </p>
 
 <p align="center">
